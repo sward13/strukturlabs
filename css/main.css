@@ -72,9 +72,9 @@ body {
   }
 }
 .paragraph {
-  font-size: 17px;
+  font-size: 21px;
   line-height: 32px;
-  font-weight: 100;
+  font-weight: 400;
 }
 .heading + .paragraph {
   margin-top: 30px;
@@ -96,7 +96,7 @@ p.paragraph {
     font-size: 22px;
   }
   .heading{
-    max-width: 100%;
+    max-width: 100% !important;
   }
 .header .paragraph{
 	max-width: 100%;
@@ -147,6 +147,15 @@ p.paragraph {
 	text-decoration: none;
 	font-weight: 900;
 	font-size: 50px;
+	-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+.menu-links li a:hover{
+	color: #fff;
 }
 /*flexbox styles*/
 .flex,
